@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400");
+@font-face {
+    font-family: 'bahnschrift';
+    src: url('C:/Users/bgr/AppData/Local/Microsoft/Windows/Fonts/Bahnschrift/bahnschrift') format('bahnschrift'),
+
+}
+html,
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flight-card {
+	box-shadow: 0 0 150px #000;
+	font: 300 1.2rem 'bahnschrift', Helvetica Neue, Arial, sans-serif;
+    font-weight: inherit;
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    border-radius: 8px;
+  margin-top: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.flight-card-header {
+  height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #264b76 0%, #002c5f 100%);
+  padding: 30px 50px;
+  border-bottom: 7px solid #6dbe47;
+  position: relative;
+}
+
+.flight-card-header .flight-logo {
+  height: 70px;
+}
+
+.flight-card-header .flight-logo img {
+  width: 150px;
+}
+
+.flight-card-header .flight-data {
+  height: 100px;
+  border-top: 2px solid #3e5177;
+  padding-bottom: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  text-align: center;
+}
+
+
+
+.flight-card-content {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.flight-card-content .flight-row {
+  width: 100%;
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flight-card-content .flight-row .plane {
+  text-align: center;
+  position: relative;
+}
+
+.flight-card-content .flight-row .plane img {
+  width: 90px;
+}
+
+.flight-card-content .flight-row .plane:before {
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #efefef;
+  position: absolute;
+  top: 45px;
+  left: -21px;
+}
+
+.flight-card-content .flight-row .plane:after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background-color: #efefef;
+  position: absolute;
+  top: 45px;
+  right: -15px;
+  
+}
+
+.flight-card-content .flight-from {
+  text-align: left;
+  float: left;
+}
+
+.flight-card-content .flight-to {
+  text-align: right;
+  float: right;
+}
+
+.flight-card-content .flight-from span,
+.flight-card-content .flight-to span {
+  display: block;
+}
+
+.flight-card-content .flight-from .from-code,
+.flight-card-content .flight-to .to-code {
+  font-size: 60px;
+  color: #002c5f;
+  font-weight: 200;
+}
+
+.flight-card-content .flight-from .from-city,
+.flight-card-content .flight-to .to-city {
+  font-size: 18px;
+  color: #002c5f;
+  font-weight: 400;
+}
+
+.flight-card-content .flight-details-row {
+  width: 100%;
+  display: grid;
+  padding: 30px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flight-card-content .flight-details-row span {
+  display: block;
+}
+
+.flight-card-content .flight-details-row .title {
+  color: #6a8597;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.flight-card-content .flight-details-row .detail {
+  margin-top: 0.2em;
+  color: #002c5f;
+  font-size: 18px;
+}
+
+.flight-card-content .flight-details-row .flight-operator {
+  text-align: left;
+  float: left;
+}
+
+.flight-card-content .flight-details-row .flight-class {
+  float: right;
+  text-align: right;
+}
+
+.flight-card-content .flight-details-row .flight-number {
+	  float: inherit;
+  text-align: inherit;
+  padding-left: 50px;
+}
+
+    .noflightmessage {
+
+        color: black;
+
+    }
+
+    .table {
+  display: table;
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.flight-card-header .flight-data span {
+  display: block;
+  
+}
+.flight-card-header .flightDate span {
+	text-align: center;
+	margin-right: 40px;
+  display: block;
+  
+}
+.flight-card-header .flightDate .title {
+	text-align: center;
+	margin-right: 40px;
+  color: #838ea8;
+  font-size: 16px;
+}
+.flight-card-header .flight-data .title {
+  color: #838ea8;
+  font-size: 16px;
+}
+
+.flight-card-header .flight-data .detail {
+  font-size: 18px;
+  padding-top: 3px;
+  color: white;
+}
+
+.continueButton {
+	font: 300 1rem 'bahnschrift', Helvetica Neue, Arial, sans-serif;
+    background-color: #002c5f;
+    color: white;
+    border: #378f7b;
+    border-width: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.continueButton:hover {
+      background-color: rgb(128, 128, 128);
+    text-align: center;
+}
+
+.flightSubmit {
+	width: 100%;
+	 background: linear-gradient(to bottom, #264b76 0%, #002c5f 100%);
+	 border-radius: 12px;
+  text-align: center;
+}
